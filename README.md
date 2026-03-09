@@ -12,15 +12,46 @@ clawhub install @whaleshi/whale-share
 
 ## 发布到 ClawHub
 
-在技能目录下执行：
+### 1. 安装 CLI
 
 ```bash
-clawhub sync --all
+npm i -g clawhub
 # 或
-clawhub publish
+pnpm add -g clawhub
 ```
 
-仓库已配置为 https://github.com/whaleshi/clawSlill 。
+### 2. 登录
+
+```bash
+clawhub login
+```
+
+按提示在浏览器中完成登录（需 [clawhub.ai](https://clawhub.ai) 账号，GitHub 账号需满一周才能发布）。
+
+### 3. 发布本 Skill
+
+ClawHub CLI 在仓库含 `.git` 时可能报错（"Path must be a folder" 或 "SKILL.md required"），建议用**复制到临时目录再发布**：
+
+```bash
+# 在项目根目录执行（把 /path/to/clawSlill 换成你当前仓库路径）
+cd /Users/shijy/Desktop/work/test
+
+# 复制 skill 到临时目录（排除 .git）
+rsync -av --exclude=.git --exclude=node_modules skills/whale-share/ /tmp/whale-share-pub/
+
+# 发布
+clawhub publish /tmp/whale-share-pub --slug whale-share --name "whale-share" --version 1.0.0 --tags latest
+```
+
+若你确定当前环境无此问题，也可直接：
+
+```bash
+cd skills/whale-share
+clawhub publish . --slug whale-share --name "whale-share" --version 1.0.0 --tags latest
+```
+
+发布成功后，他人安装：`clawhub install @whaleshi/whale-share`。  
+仓库：https://github.com/whaleshi/clawSlill
 
 ## 使用
 
