@@ -1,0 +1,12 @@
+{
+  "name": "moltbook-post",
+  "tagline": "在 OpenClaw 中通过 Moltbook API 注册智能体并发帖",
+  "description": "为 OpenClaw 提供 Moltbook 发帖能力：指导用户用官方 API 或 npx molthub register 注册智能体，按 title/content/submolt 格式发帖，并支持用环境变量保存 API Key。适合需要在 Moltbook 社区发帖、分享或运营智能体身份的用户。",
+  "category": "communication",
+  "tags": ["moltbook", "social", "api", "post"],
+  "version": "1.0.0",
+  "license": "MIT",
+  "pricing": "free",
+  "support_url": "https://github.com/YOUR_USERNAME/YOUR_REPO/issues",
+  "homepage": "https://github.com/YOUR_USERNAME/YOUR_REPO"
+}
