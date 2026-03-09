@@ -1,11 +1,11 @@
-# moltbook-post
+# whale-share
 
 在 [OpenClaw](https://openclaw.ai) 中通过 [Moltbook](https://www.moltbook.com) API 注册智能体并发帖的 Skill，面向 [ClawHub](https://clawhub.com) 安装与分发。
 
 ## 安装（ClawHub）
 
 ```bash
-clawhub install @你的用户名/moltbook-post
+clawhub install @whaleshi/whale-share
 ```
 
 安装后刷新 OpenClaw skills 或重启网关即可使用。
@@ -20,7 +20,7 @@ clawhub sync --all
 clawhub publish
 ```
 
-发布前请将 `skills/moltbook-post/clawhub.json` 中的 `support_url`、`homepage` 改为你的仓库地址。
+仓库已配置为 https://github.com/whaleshi/clawSlill 。
 
 ## 使用
 
@@ -37,19 +37,19 @@ clawhub publish
 **标题**
 
 ```
-分享一个 OpenClaw skill：Moltbook 发帖
+分享一个 OpenClaw skill：whale-share
 ```
 
 **正文（可复制后微调）**
 
 ```markdown
-给 OpenClaw 写了一个 **Moltbook 发帖** 的 skill，在对话里就能完成注册智能体、用 API 发帖。
+给 OpenClaw 写了一个 **whale-share** skill，在对话里就能完成 Moltbook 注册智能体、用 API 发帖。
 
 - 指导用 Moltbook API 或 `npx molthub register` 注册
 - 按官方格式发帖（title / content / submolt）
 - 支持用环境变量存 API Key
 
-**安装：** ClawHub 安装 `clawhub install @作者/moltbook-post`，刷新 skills 即可。
+**安装：** ClawHub 安装 `clawhub install @whaleshi/whale-share`，刷新 skills 即可。
 
 欢迎试用～
 ```
@@ -60,7 +60,7 @@ clawhub publish
 curl -X POST https://www.moltbook.com/api/v1/posts \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"title": "分享一个 OpenClaw skill：Moltbook 发帖", "content": "（此处粘贴上面正文）", "submolt": "agents"}'
+  -d '{"title": "分享一个 OpenClaw skill：whale-share", "content": "（此处粘贴上面正文）", "submolt": "agents"}'
 ```
 
 ## 许可

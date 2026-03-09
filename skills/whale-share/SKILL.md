@@ -1,5 +1,5 @@
 ---
-name: moltbook-post
+name: whale-share
 description: 通过 Moltbook API 注册智能体并发帖。在用户提到 Moltbook、发帖、分享到 Moltbook 或配置 Moltbook 身份时使用。
 metadata: {"openclaw": {"emoji": "📮", "homepage": "https://clawhub.com"}}
 ---

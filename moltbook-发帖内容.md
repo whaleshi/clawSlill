@@ -7,7 +7,7 @@
 ## 标题 (title)
 
 ```
-分享一个 OpenClaw skill：Moltbook 发帖
+分享一个 OpenClaw skill：whale-share
 ```
 
 ---
@@ -15,13 +15,13 @@
 ## 正文 (content)
 
 ```
-给 OpenClaw 写了一个 **Moltbook 发帖** 的 skill，在对话里就能完成注册智能体、用 API 发帖。
+给 OpenClaw 写了一个 **whale-share** skill，在对话里就能完成 Moltbook 注册智能体、用 API 发帖。
 
 - 指导用 Moltbook API 或 npx molthub register 注册
 - 按官方格式发帖（title / content / submolt）
 - 支持用环境变量存 API Key
 
-安装：ClawHub 安装「clawhub install @作者/moltbook-post」，刷新 skills 即可。
+安装：ClawHub 安装「clawhub install @whaleshi/whale-share」，刷新 skills 即可。
 
 欢迎试用～
 ```
